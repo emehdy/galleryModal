@@ -17,7 +17,16 @@ var app=angular.module('galleryModal',[]);
 		$scope.$watch('modal.index',function(index){
 			$scope.current=$scope.modal.rows[$scope.modal.index]||0;
 		})
-		
+		$scope.next=function()
+		{
+			if($scope.modal.index>=$scope.modal.rows.length-1)return;
+			$scope.modal.index++;
+		}
+		$scope.prev=function()
+		{
+			if($scope.modal.index<=0)return;
+			$scope.modal.index--;
+		}
 		
 	})
 	app.controller('mainCtrl',function($scope,$rootScope,$timeout){

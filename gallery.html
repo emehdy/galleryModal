@@ -3,6 +3,8 @@
             <b>X</b>  
         </a>
           
+        <div   class="modal-next"   ><a href ng-click="next()" > &gt; </a></div>
+        <div   class="modal-prev"   ><a href ng-click="prev()" > &lt; </a></div>
         <div   class="modal-over"   >
 		 <a href><div   class="bg-img person-sm" ng-style="$root.bg_url(current.personal)"></div></a>
 		 <a href>{{current.name}}</a>
@@ -73,5 +75,27 @@
     text-align: center;
     margin-bottom: 20px;
     border-bottom: 1px solid #ccc;
+}
+.modal-prev, .modal-next {
+    position: absolute;
+    bottom: 10%;
+    left: 10px;
+}
+
+.modal-next {
+    left: auto;
+    right: 10px;
+}
+
+.modal-prev a, .modal-next a {
+    color: #fff;
+    font-size: 40;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.modal-prev a:hover, .modal-next a:hover {
+    font-weight: normal;
+    color: #eee;
 }
 </style>
