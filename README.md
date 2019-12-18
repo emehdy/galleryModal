@@ -11,6 +11,6 @@ How to use :
  <div gallery-modal="galModal" template-url="gallery.html" > 
  
  ```
- ![alt tag](https://raw.githubusercontent.com/emehdy/galleryModal/master/images/1.jpg)
+ ![alt tag](https://raw.githubusercontent.com/emehdy/galleryModal/master/images/demo.png)
  
  
