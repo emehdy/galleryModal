@@ -1,0 +1,26 @@
+<html ng-app="galleryModal">
+<head>
+  <link rel="stylesheet" href="lib/animate.min.css">
+</head>
+
+<body ng-controller="mainCtrl">
+    <!--Call your modal-->
+    <div ng-repeat="row in html.rows">
+	 
+	<a  href ng-click="start_gal($index)">  {{row.name}}</a> 
+	
+	</div>
+	 
+	<pre>galModal :{{galModal }} </pre>
+	 
+    
+    <div gallery-modal="galModal" template-url="gallery.html" ></div>
+	 <script src="lib/angular.min.js"></script>
+	 <script src="lib/jquery.min.js"></script>
+	 <script src="app.js"></script>
+	 <script src="galleryModal.js"></script>
+	 
+	 
+	 
+</body>
+</html>

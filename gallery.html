@@ -1,0 +1,77 @@
+<div ng-if="modal.render" ng-controller="galModalCtrl">
+		<a href  style="color: #fff;position: absolute;top: 10px;right: 10px;" ng-click="modal.close()"> 
+            <b>X</b>  
+        </a>
+          
+        <div   class="modal-over"   >
+		 <a href><div   class="bg-img person-sm" ng-style="$root.bg_url(current.personal)"></div></a>
+		 <a href>{{current.name}}</a>
+		 <div>{{current.course}} Year :{{current.year}}</div>
+		</div>
+        <div   class="modal-box"   >
+		<div  >
+		<h1>{{current.name}}</h1>
+                   
+                   <div class="person-img-wrap"  >
+					<div   class="bg-img person-img" ng-style="$root.bg_url(current.personal)"></div>
+				   </div>
+				  <div class="work-img-wrap" ng-repeat="img in current.content">
+					<div  class="work-img bg-img" ng-style="$root.bg_url(img )"></div>
+				  </div>
+				   
+                  
+        </div>
+        </div>
+</div>
+<style>
+.modal-box{
+	background-color:#fff;padding:2%;margin: 90px 60px;;min-height:100%;
+}
+.modal-over {
+    color: #fff;
+    position: absolute;
+    width: 60%;
+    padding: 20px 90px;
+    top: 0px;
+    
+}
+.modal-over a {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom:5px; 
+}
+.person-sm {
+    height: 40px;
+    width: 40px;
+    background-size: cover!important;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    float: left;
+    margin: 0 10px;
+}
+.bg-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.person-img-wrap{
+	text-align: center;
+    height: 340px;
+    padding: 10px;
+}
+.person-img{
+	height:300px;
+	width:300px;
+	display:inline-block;
+	border-radius:50%;
+	border:5px solid #efefef;
+}
+.work-img {height:600px;}
+.work-img-wrap {
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+</style>
