@@ -1,5 +1,16 @@
 # galleryModal
 galleryModal is AngularJs 1.x directive help creating Modal animated over page  
+
+
 based on jquery animated-modal
+
+
 How to use :
- div gallery-modal="galModal" template-url="gallery.html"  
+```HTML
+
+ <div gallery-modal="galModal" template-url="gallery.html" > 
+ 
+ ```
+ ![alt tag](https://raw.githubusercontent.com/emehdy/galleryModal/master/images/1.jpg)
+ 
+ 
